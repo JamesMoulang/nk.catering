@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="color-scheme" content="light dark"> -->
+    <title>NK the baking caterer</title>
+    <meta name="description" content="Check in users">
+
+    <!-- <link rel="icon" href="/icon.png" type="image/png"> -->
+    <!-- <link rel="icon" href="/icon.svg" type="image/svg+xml"> -->
+    <!-- <link rel="apple-touch-icon" href="/icon.png"> -->
+
+    <!-- Pico.css -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.min.css"
+    > -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <body>
+    <main style="max-width: 500px;">
+      <a href="../"><img style="width: 100%; max-width: 80px;" src="../img/logo.png"/></a>
+
+      <div class="nav_group">
+        <a href="../buns">Buns</a>
+        <a href="../cakes">Cakes</a>
+        <p>Weddings</p>
+        <a href="../supper">Supper clubs</a>
+        <a href="../wholesale">Wholesale</a>
+        <!-- <a href="../wholesale">Wholesale</a> -->
+      </div>
+
+      <img class="full_img" src="../img/wedding.jpeg"/>
+
+      <content>
+        <!-- <a href="#order" class="place_order">Click here to place an order</a> -->
+        <p>I offer a full wedding cake service, working with you to pick flavours and a design that represents you on your special day.</p>
+
+        <br/>
+        <a href="#order" class="place_order">Click here to request a consultation</a>
+
+        <h2>Designing your cake</h2>
+
+        <p>The process begins with an initial consultation, online or in-person, where we'll discuss options and preferences for flavour and design. Here are some examples of my most popular flavours:</p>
+        
+        <p style="margin-top: 16px;">Chocolate fudge cake with cherry, and vanilla buttercream.</p>
+        <p style="margin-top: 4px;">Victoria sponge cake with strawberry jam and lemon buttercream.</p>
+        <p style="margin-top: 4px;">Vegan chocolate chip cookie cake with buttercream icing.</p>
+
+        <p>If necessary, trial cakes and samples can be produced for an appropriate fee.</p>
+
+        <!-- <p>I tend to work with seasonal produce and ingredients, which can provide some direction with regard to flavours.</p> -->
+
+        <h2>Pricing</h2>
+
+        <p>50 people: £300</p>
+        <p style="margin-top: 4px;">100 people: £400</p>
+        <p style="margin-top: 4px;">150 people: £525</p>
+        <p style="margin-top: 16px;">Initial consultation: £25</p>
+        <p style="margin-top: 4px;">Transport: starting from £20</p>
+        <p style="margin-top: 4px;">Samples: starting from £20</p>
+        <p>A non-refundable deposit of 50% must be paid to secure the order.</p>
+
+        <br/>
+        <a href="#order" class="place_order">Click here to request a consultation</a>
+
+        <h2>Examples</h2>
+        <img class="full_img" src="../img/wedding_heart.jpeg"/>
+        <p>Couple's cake for Holly and Jessie - vegan chocolate chip cookie cake with buttercream icing.</p>
+        <img class="full_img" src="../img/wedding_2.jpeg"/>
+        <p>Three tiered wedding cake for Priya:</p>
+        <p style="margin-top: 16px;">Citrus fruit cake with marmalade and vanilla buttercream.</p>
+        <p style="margin-top: 4px;">Chocolate fudge cake with fresh cherries, cherry jam and vanilla buttercream.</p>
+        <p style="margin-top: 4px;">Victoria sponge with fresh strawberries, strawberry jam and lemon buttercream.</p>
+
+        <blockquote>
+          The cake was absolutely incredible!!! It was so stunning to look at and so delicious. I am so pleased to have you bake for our special day ❤️❤️❤️❤️
+        </blockquote>
+      </content>
+
+      <div id="order" class="link_group">
+        <h2>Request a consultation</h2>
+
+        <form
+          action="https://www.form-to-email.com/api/s/WqyhFefAjrlu"
+          method="POST"
+        >
+          <input type="text" id="name" name="name" placeholder="Name"><br>
+          <input type="email" id="email" name="email" placeholder="Email"><br>
+          <textarea id="message" name="message" rows="1" cols="30" placeholder="Please specify your wedding date and any ideas for flavours or designs that you'd like to discuss at your initial consultation."></textarea><br>
+
+          <input type="submit" value="Place Order">
+        </form>
+
+      </div>
+        
+    </main>
+
+    <script>
+      const textarea = document.getElementById('message');
+
+      textarea.addEventListener('input', function() {
+        this.style.height = 'auto'; // Reset height to recalculate
+        this.style.height = (this.scrollHeight) + 'px'; // Set height to scroll height
+      });
+
+      // Optional: Adjust height on page load in case there's pre-filled content
+      textarea.dispatchEvent(new Event('input'));
+    </script>
+  </body>
+</html>

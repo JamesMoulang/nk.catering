@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="color-scheme" content="light dark"> -->
+    <title>NK the baking caterer</title>
+    <meta name="description" content="Check in users">
+
+    <!-- <link rel="icon" href="/icon.png" type="image/png"> -->
+    <!-- <link rel="icon" href="/icon.svg" type="image/svg+xml"> -->
+    <!-- <link rel="apple-touch-icon" href="/icon.png"> -->
+
+    <!-- Pico.css -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.min.css"
+    > -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <body>
+    <main>  
+      <a href="../"><img style="width: 100%; max-width: 80px;" src="../img/logo.png"/></a>
+
+      <div class="nav_group">
+        <a href="../buns">Buns</a>
+        <a href="../cakes">Cakes</a>
+        <a href="../weddings">Weddings</a>
+        <p>Supper clubs</p>
+        <a href="../wholesale">Wholesale</a>
+        <!-- <a href="../wholesale">Wholesale</a> -->
+      </div>
+
+      <img class="full_img" src="../img/supper.jpeg"/>
+
+      <content>
+        <p>I run supper clubs in Cambridge throughout the year, using seasonal produce source locally from <a href="https://sweetpeamarketgarden.co.uk/">Sweetpea Market Garden</a> to create one of a kind communal dining experiences.</p>
+        <p>Join the mailing list and I'll let you know when the next event is available to book.</p>
+        <br/>
+        <a href="#order" class="place_order">Join mailing list</a>
+
+        <h2 style="margin-top: 48px;">Past supper clubs</h2>
+        <img class="full_img" src="../img/supper_3.jpeg"/>
+        <blockquote>
+          Noz created a fantastic menu with local produce. Their superclub exceeded expectations, I cannot recommend their services enough!
+        </blockquote>
+        <img class="full_img" src="../img/supper_2.jpeg"/>
+        <p>Charred padron peppers, rainbow salad, guacamole, courgette flowers stuffed with ricotta and lemon, garlic yoghurt with harissa, tomato aguachile.</p>
+      </content>
+
+      <div id="order" class="link_group">
+        <h2>Join the mailing list</h2>
+        <p style="margin-bottom: 16px;">I'll email you when the next event is available to book.</p>
+
+        <form
+          action="https://www.form-to-email.com/api/s/TGcp8ROpCsvq"
+          method="POST"
+        >
+          <input type="text" id="name" name="name" placeholder="Name"><br>
+          <input type="email" id="email" name="email" placeholder="Email"><br>
+          <textarea id="message" name="message" rows="1" cols="30" placeholder="Leave a message e.g. special dietary requirements"></textarea><br>
+
+          <input type="submit" value="Place Order">
+        </form>
+
+      </div>
+        
+    </main>
+
+    <script>
+      const textarea = document.getElementById('message');
+
+      textarea.addEventListener('input', function() {
+        this.style.height = 'auto'; // Reset height to recalculate
+        this.style.height = (this.scrollHeight) + 'px'; // Set height to scroll height
+      });
+
+      // Optional: Adjust height on page load in case there's pre-filled content
+      textarea.dispatchEvent(new Event('input'));
+    </script>
+  </body>
+</html>

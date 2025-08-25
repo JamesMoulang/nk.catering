@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="color-scheme" content="light dark"> -->
+    <title>NK the baking caterer</title>
+    <meta name="description" content="Check in users">
+
+    <!-- <link rel="icon" href="/icon.png" type="image/png"> -->
+    <!-- <link rel="icon" href="/icon.svg" type="image/svg+xml"> -->
+    <!-- <link rel="apple-touch-icon" href="/icon.png"> -->
+
+    <!-- Pico.css -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.min.css"
+    > -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+      @media (min-width: 1024px) {
+        html {
+          zoom: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <img style="width: 100%; max-width: 128px;" src="./img/logo.png"/>
+
+      <div class="link_group" style="margin-top: 0px;">
+        <p>Baking and catering micro-business</p>
+      </div>
+      
+      <div class="link_group">
+        <a href="./buns"><h2>Buns</h2></a>
+        <p>Scandinavian inspired buns - order for pickup</p>
+      </div>
+
+      <div class="link_group">
+        <a href="./cakes"><h2>Cakes</h2></a>
+        <p>Pick your flavour - made to order</p>
+      </div>
+
+      <div class="link_group">
+        <a href="./weddings"><h2>Weddings</h2></a>
+        <p>Designed and made bespoke for your event</p>
+      </div>
+
+      <div class="link_group">
+        <a href="./supper"><h2>Supper clubs</h2></a>
+        <p>Group dinners made from seasonal produce</p>
+      </div>
+
+      <div class="link_group">
+        <a href="./wholesale"><h2>Wholesale & Catering</h2></a>
+        <p>Wholesale orders, event catering, FAQs</p>
+      </div>
+
+      <div class="link_group">
+        <h2>Get in touch</h2>
+
+        <form>
+          <input type="text" id="name" name="name" placeholder="Name"><br>
+          <input type="email" id="email" name="email" placeholder="Email"><br>
+          <textarea id="message" name="message" rows="1" cols="30" placeholder="Message"></textarea><br>
+
+          <input type="submit" value="Send Message">
+        </form>
+
+      </div>
+
+      <hr/>
+
+      <div class="link_group">
+        <h2>About me</h2>
+
+        <img class="full_img" src="./img/me.jpeg"/>
+        
+        <p style="margin-top: 16px;">Hi! I'm Noz, a Finnish baker, farmer, event manager, and barista living in the UK. I have been catering to cafes in Cambridge for 40 years and I'm super passionate about sustainable, seasonal produce.</p>
+      </div>
+
+    </main>
+
+    <script>
+      const textarea = document.getElementById('message');
+
+      textarea.addEventListener('input', function() {
+        this.style.height = 'auto'; // Reset height to recalculate
+        this.style.height = (this.scrollHeight) + 'px'; // Set height to scroll height
+      });
+
+      // Optional: Adjust height on page load in case there's pre-filled content
+      textarea.dispatchEvent(new Event('input'));
+    </script>
+  </body>
+</html>

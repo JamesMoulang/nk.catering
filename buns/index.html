@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="color-scheme" content="light dark"> -->
+    <title>NK the baking caterer</title>
+    <meta name="description" content="Check in users">
+
+    <!-- <link rel="icon" href="/icon.png" type="image/png"> -->
+    <!-- <link rel="icon" href="/icon.svg" type="image/svg+xml"> -->
+    <!-- <link rel="apple-touch-icon" href="/icon.png"> -->
+
+    <!-- Pico.css -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.min.css"
+    > -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <body>
+    <main>  
+      <a href="../"><img style="width: 100%; max-width: 80px;" src="../img/logo.png"/></a>
+
+      <div class="nav_group">
+        <p>Buns</p>
+        <a href="../cakes">Cakes</a>
+        <a href="../weddings">Weddings</a>
+        <a href="../supper">Supper clubs</a>
+        <a href="../wholesale">Wholesale</a>
+        <!-- <a href="../wholesale"><p>About</p></a> -->
+      </div>
+
+      <img class="full_img" src="../img/bun.jpeg"/>
+
+      <content>
+        <p>I offer a variety of Scandinavian inspired <i>pulla</i> pastry buns, available to pickup, to order in batches of 8 (£28) or 16 (£48).</p>
+
+        <h2>About the buns</h2>
+        <p>I offer four flavours of <i>pulla</i> buns:</p>
+        
+        <p style="margin-top: 16px;">Cardamom & Cinnamon buns</p>
+        <p style="margin-top: 4px;">Cheese, Marmite & Mustard buns</p>
+        <p style="margin-top: 4px;">Mocha buns</p>
+        <p style="margin-top: 4px;">Seasonal buns (changes constantly)</p>
+
+        <h2>Pickup</h2>
+        <p>Bun pickup is between 8am and 10am on Fridays at The Garden Kitchen, <a href="https://maps.app.goo.gl/zbQUGuDsKQKiYcaW9">82 Mill Rd</a></p>
+        <p>Payment is in cash upon collection.</p>
+        <p>Please order by Monday 3pm to have your buns ready to pick up on Friday and enjoy over the weekend!</p>
+
+        <div class="link_group">
+          <h2>Place an order</h2>
+
+          <form
+            action="https://www.form-to-email.com/api/s/eju8OSfesPgA"
+            method="POST"
+          >
+            <input type="text" id="name" name="name" placeholder="Name"><br>
+            <input type="email" id="email" name="email" placeholder="Email"><br>
+            <textarea id="message" name="message" rows="1" cols="30" placeholder="Order (flavours, number of batches)"></textarea>
+            <!-- add hidden Honeypot input to prevent spams -->
+            <input type="hidden" name="_gotcha" style="display:none !important">
+
+            <br>
+
+            <input type="submit" value="Place Order">
+          </form>
+
+        </div>
+
+        <h2>Dietary info</h2>
+
+        <p>All buns - with the exception of certain seasonal buns - are suitable for vegetarians. The Cheese, Marmite & Mustard buns are suitable for vegans.</p>
+
+        <p>I can make anything vegan on request - please get in touch about any allergens or dietary requirements!</p>
+
+        <p>Buns store well in the freezer for up to a month and can be reheated in the microwave or the oven.</p>
+      </content>
+        
+    </main>
+
+    <script>
+      const textarea = document.getElementById('message');
+
+      textarea.addEventListener('input', function() {
+        this.style.height = 'auto'; // Reset height to recalculate
+        this.style.height = (this.scrollHeight) + 'px'; // Set height to scroll height
+      });
+
+      // Optional: Adjust height on page load in case there's pre-filled content
+      textarea.dispatchEvent(new Event('input'));
+    </script>
+  </body>
+</html>

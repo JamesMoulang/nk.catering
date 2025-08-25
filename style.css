@@ -1,0 +1,163 @@
+@media (min-width: 1024px) {
+  html {
+    zoom: 1.25;
+  }
+}
+
+html {
+  background-color: #dfdfde;
+  font-family: Cormorant Garamond, serif;
+  color: #706557;
+  font-weight: 200;
+}
+
+h2 {
+  font-weight: 500;
+  margin: 0px;
+}
+
+blockquote {
+  font-style: italic;
+  /*margin: 2em 0;*/
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 80%;
+}
+
+p {
+  margin: 0px;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+.link_group {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  
+  /*padding: 8px;*/
+  /*border-style: solid;*/
+  /*border-width: 1px;*/
+  /*border-color: #706557;*/
+  /*border-width: 0.5px;*/
+}
+
+.link_group h2 {
+  margin-bottom: 8px;
+}
+
+a {
+  color: #706557;
+}
+
+/* Form field styling */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  background-color: #dfdfde; /* Matches html background-color */
+  border: 0.25px solid #706557; /* A subtle border matching text color */
+  padding: 8px 12px;
+  width: calc(100% - 24px); /* Adjust width to account for padding and border */
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+  margin-bottom: 16px; /* Space between fields */
+  color: #706557; /* Text color inside fields */
+  font-family: inherit; /* Inherit font from html */
+  font-weight: inherit; /* Inherit font-weight from html */
+
+  border-top: none;
+  border-left: none;
+  border-right: none;
+
+  resize: none;
+  overflow-y: hidden;
+}
+
+/* Remove default focus outline and add a custom one */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #554a3e; /* Slightly darker border on focus */
+}
+
+/* Hide labels */
+form label {
+  display: none;
+}
+
+/* Submit button styling */
+form input[type="submit"] {
+  background-color: transparent; /* Transparent background */
+  color: #706557; /* Text color */
+  border: 1px solid #706557; /* Border matching text color */
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: inherit; /* Inherit font */
+  font-weight: 500; /* A slightly bolder weight for the button */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transitions for hover */
+}
+
+form input[type="submit"]:hover {
+  background-color: #706557; /* Solid background on hover */
+  color: #dfdfde; /* Light text on hover */
+  border-color: #706557; /* Keep border color consistent on hover */
+}
+
+.place_order {
+  background-color: transparent; /* Transparent background */
+  color: #706557; /* Text color */
+  border: 1px solid #706557; /* Border matching text color */
+  padding: 10px 20px;
+  cursor: pointer;
+  font-family: inherit; /* Inherit font */
+  font-weight: 500; /* A slightly bolder weight for the button */
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transitions for hover */
+  text-decoration: none !important;
+}
+
+.place_order:hover {
+  background-color: #706557; /* Solid background on hover */
+  color: #dfdfde; /* Light text on hover */
+  border-color: #706557; /* Keep border color consistent on hover */
+}
+
+.nav_group {
+  margin-bottom: 24px;
+}
+
+.nav_group p {
+  display: inline-block;
+  margin: 4px;
+  text-decoration: none;
+}
+
+.nav_group a {
+  display: inline-block;
+  margin: 4px;
+  text-decoration: underline;
+}
+
+.full_img {
+  width: 100%;
+  max-width: 256px;
+}
+
+content p {
+  margin-top: 16px;
+}
+
+content h2 {
+  margin-top: 24px;
+}
+
+content img {
+  margin-top: 32px;
+}
+
+content video {
+  margin-top: 32px;
+}

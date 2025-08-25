@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="color-scheme" content="light dark"> -->
+    <title>NK the baking caterer</title>
+    <meta name="description" content="Check in users">
+
+    <!-- <link rel="icon" href="/icon.png" type="image/png"> -->
+    <!-- <link rel="icon" href="/icon.svg" type="image/svg+xml"> -->
+    <!-- <link rel="apple-touch-icon" href="/icon.png"> -->
+
+    <!-- Pico.css -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.1.1/css/pico.min.css"
+    > -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <body>
+    <main>  
+      <a href="../"><img style="width: 100%; max-width: 80px;" src="../img/logo.png"/></a>
+
+      <div class="nav_group">
+        <a href="../buns">Buns</a>
+        <a href="../cakes">Cakes</a>
+        <a href="../weddings">Weddings</a>
+        <a href="../supper">Supper clubs</a>
+        <p>Wholesale</p>
+        <!-- <a href="../wholesale">Wholesale</a> -->
+      </div>
+
+      <img class="full_img" src="../img/wholesale_2.jpeg"/>
+
+      <content>
+        <h2>About the buns</h2>
+        <p>I offer four flavours of <i>pulla</i> buns:</p>
+        
+        <p style="margin-top: 16px;">Cardamom & Cinnamon buns</p>
+        <p style="margin-top: 4px;">Cheese, Marmite & Mustard buns</p>
+        <p style="margin-top: 4px;">Mocha buns</p>
+        <p style="margin-top: 4px;">Seasonal buns (changes constantly)</p>
+
+        <br/><br/>
+        <a href="#order" class="place_order">Click here to place an order</a>
+
+        <h2>Ordering</h2>
+
+        <p>Wholesale orders are on a weekly standing order basis. Please place any orders or adjustments by Monday afternoon for your order to be delivered on Friday.</p>
+        <p>The buns are delivered in reusable boxes, with allergen information and date labels. I'm a <a href="https://ratings.food.gov.uk/business/1792333/noora-kippola">registered food business</a> with a 5 star hygeine rating.</p>
+        <p>Minimum order per flavour: 32 buns</p>
+        <p>Wholesale prices available upon request.</p>
+        <p>For samples please order through the <a href="/buns">buns</a> page.</p>
+
+        <h2>Dietary info</h2>
+
+        <p>All buns - with the exception of certain seasonal buns - are suitable for vegetarians. The Cheese, Marmite & Mustard buns are suitable for vegans.</p>
+
+        <p>I can make anything vegan on request - please get in touch about any allergens or dietary requirements!</p>
+
+        <p>Buns store well in the freezer for up to a month and can be reheated in the microwave or the oven.</p>
+
+        <h2>Examples</h2>
+        <img class="full_img" src="../img/seasonal_1.jpeg"/>
+        <p>Seasonal bun: prosciutto, wild garlic and parmesan</p>
+
+        <img class="full_img" src="../img/seasonal_2.jpeg"/>
+        <p>Seasonal bun: chocolate mini egg</p>
+      </content>
+
+      <div id="order" class="link_group">
+        <h2>Request wholesale order</h2>
+
+        <form
+          action="https://www.form-to-email.com/api/s/l_T9hFv1tTym"
+          method="POST"
+        >
+          <input type="text" id="name" name="name" placeholder="Company name"><br>
+          <input type="email" id="email" name="email" placeholder="Email"><br>
+          <textarea id="message" name="message" rows="1" cols="30" placeholder="Order (flavours, amounts, additional questions or requests)"></textarea><br>
+
+          <input type="submit" value="Place Order">
+        </form>
+
+      </div>
+        
+    </main>
+
+    <script>
+      const textarea = document.getElementById('message');
+
+      textarea.addEventListener('input', function() {
+        this.style.height = 'auto'; // Reset height to recalculate
+        this.style.height = (this.scrollHeight) + 'px'; // Set height to scroll height
+      });
+
+      // Optional: Adjust height on page load in case there's pre-filled content
+      textarea.dispatchEvent(new Event('input'));
+    </script>
+  </body>
+</html>
